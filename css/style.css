@@ -1,0 +1,242 @@
+@import url("variables.css");
+
+html{
+	min-width: 500px;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+html *{
+	padding: 0;
+}
+
+body {
+  color: var(--text-color);
+	z-index: 0;
+	overflow: auto;
+	background-color: var(--main-bg-color);
+	font-family: "Aileron";
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.side-nav {
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	background-color: var(--light-bg-color);
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 120px; /* Set the width of the sidebar (WIDTH-2) BECAUSE OF 2PX BORDER*/
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: auto;
+}
+
+.side-nav p {
+	text-align: center;
+}
+
+.side-nav p:not(.user-name,.user-initials) {
+	padding: 12px 0;
+}
+
+.name * {
+	margin: 0;
+}
+
+.name{
+	border-style: solid;
+	border-color: var(--accent-color);
+	border-width: 2px 0;
+}
+
+.user-initials {
+	display: none;
+}
+
+.side-nav .nav-icon img{ /* style the little images in the sidebar */
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin: 0 auto;
+}
+
+.nav-icon {
+	display: block;
+	width: 100%;
+	padding: 12px 0;
+	text-decoration: none;
+	color: white;
+}
+
+.nav-icon:hover{
+	transition: 0.1s;
+	-webkit-transition: 0.3s;
+	background-color: var(--main-bg-color);
+}
+
+.side-nav .logo img {
+	padding: 20px 0;
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.side-nav .name .user-settings{
+	display: none;
+}
+
+.side-nav .name .user-settings a {
+	position: absolute;
+	font-size: 10pt;
+	color: #e0dedc;
+	left: 0;
+	right: 0;
+	text-align: center;
+	text-decoration: none;
+}
+
+.side-nav .name:hover .user-settings{
+	transition: 3s;
+	-webkit-transition: 3s;
+	display:block
+}
+
+.main { /*position the main canvas on the right of the sidebar*/
+	position: absolute;
+  height: 100%;
+  right: 0;
+  left: 120px;
+}
+
+.central-div{
+  position: absolute;
+  height: 100%;
+  left: 0; /* This makes it hug the left side of the div */
+  right: 120px; /* having right value centers the div */
+}
+
+.invalidInput{ /*styling for any invalid inputs to forms */
+	text-align: center;
+	background-color: #ed7474;
+	display: none;
+	border: 5px;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: #ed7474;
+	color: white;
+	width: auto;
+}
+
+.hidden{
+	display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, /*this removes the up and down arrows on the number inputs */
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.default-button{
+	cursor: pointer;
+	color: white;
+	background-color: var(--light-bg-color);
+	border: 5px solid transparent;
+	border-radius: 3px;
+}
+
+.default-button:hover{
+	background-color: var(--light-accent-color);
+}
+
+@media only screen and (max-height: 500px), screen and (max-width: 900px)  {
+
+	.side-nav {
+	  width: 40px; /* Set the width of the sidebar (WIDTH-2) BECAUSE OF 2PX BORDER*/
+	}
+
+	.user-initials {
+		display: block;
+	}
+
+	.user-name {
+		display: none;
+	}
+
+	.side-nav .name .user-settings a {
+		font-size: 8pt;
+	}
+
+	.side-nav .nav-icon:hover{ /* style the little images in the sidebar */
+		transition: 0.3;
+		-webkit-transition: 0.3;
+		padding: 11px 0;
+		background-color: transparent;
+	}
+
+	.side-nav .nav-icon img{ /* style the little images in the sidebar */
+		width: 30px;
+		height: 30px;
+	}
+
+	.side-nav .nav-icon:hover img{
+		width: 32px;
+		height: 32px;
+	}
+
+	.side-nav .nav-icon img:hover > { /* style the little images in the sidebar */
+		transition: 0.3;
+		width: 32px;
+		height: 32px;
+	}
+
+	.side-nav .nav-icon p{ /* style the little images in the sidebar */
+		display: none;
+	}
+
+	.main{
+		left: 40px;
+	}
+
+	.central-div{
+		right: 40px;
+	}
+}
+
+/*SCROLL BAR STYLING */
+
+::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.side-nav::-webkit-scrollbar-track
+{
+  background: rgba(77,170,196,0.1);
+}
+
+.side-nav::-webkit-scrollbar-thumb
+{
+  background: rgb(77,170,196,0.5);
+}
+
+/*--------------------------*/

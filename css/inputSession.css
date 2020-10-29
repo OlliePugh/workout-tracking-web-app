@@ -1,0 +1,165 @@
+@import url("variables.css");
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+#lhs{
+  width:40%;
+  float: left;
+}
+
+#rhs{
+  width: 60%;
+  margin-left: 40%; /* matches the width of the lhs so that there is no overlap*/
+}
+
+#sessionList{
+  display:block;
+  width: 70%;
+  margin: 30px auto 0 auto;
+}
+
+.session-set {
+  margin-left: 20px;
+}
+
+.exercise-wrapper {
+  padding: 20px 0;
+  background-color: var(--light-bg-color);
+}
+
+.exercise-wrapper:nth-child(1){
+  border-top: 5px solid transparent;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.exercise-wrapper:nth-last-child(1){
+  border-bottom: 5px solid transparent;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.exercise-wrapper:nth-child(odd){
+  background-color: var(--accent-color);
+}
+
+.exercise-wrapper:nth-child(odd) li{
+  color: var(--main-bg-color);
+}
+
+.exercise-header {
+  margin-left: 10%;
+  list-style: none;
+}
+
+.session-set{
+  margin-left: 30%;
+}
+
+#lhs-wrapper{
+  height: auto;
+  min-height: 308px;
+  border: 5px solid transparent;
+  border-radius: 25px;
+  margin: 0 auto;
+  width: 70%;
+  background-color: var(--accent-color);
+}
+
+#exerciseName {
+  width: 100%;
+  text-align:center;
+  overflow-wrap: break-word;
+}
+
+#date-name {
+display: block;
+text-align:center;
+margin: 30px auto 0 auto;
+}
+
+#date-div {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#datepicker{
+  cursor: pointer;
+  display: block;
+  text-align:center;
+  margin: 0 auto;
+}
+
+#nameInput {
+  width: 100%;
+  text-align:center;
+  margin-top: 25px;
+
+}
+
+#nameInput::placeholder{
+  color: var(--text-color);
+}
+
+.spotlight-div{
+  margin: 0 auto;
+  overflow: scroll;
+}
+
+.spotlight-div select, .spotlight-div input{
+  box-sizing: border-box;
+  width: 100px;
+}
+
+select, input{
+  background-color: var(--light-bg-color);
+  color: white;
+  border: 5px solid transparent;
+  border-radius: 5px;
+}
+
+#create-new-exercise{
+  text-decoration: none;
+  color: white;
+}
+
+.default-button:not(#datepicker){
+  padding: 5px 15px;
+}
+
+.deleteButton{
+  border: 0;
+  border-radius: 0px;
+  margin-left: 10px;
+  width: 12;
+  height: 12;
+  cursor: pointer;
+}
+
+.spotlight-button{
+  width: 70%;
+  position: relative;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+#exerciseTable {
+  width: 100%;
+  text-align: center;
+}
+
+#exerciseTable tbody td {
+  padding: 5px 0;
+  border: 5px solid transparent;
+  border-radius: 5px;
+}
+
+#exerciseTable tbody tr:not(#no-exercise-found):hover{
+  background-color: var(--light-bg-color);
+  cursor: pointer;
+}

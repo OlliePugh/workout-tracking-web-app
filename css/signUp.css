@@ -1,0 +1,57 @@
+@import url("variables.css");
+
+#wrapper{
+  width: 30%;
+  padding: 0 10%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+input:not(.date-input) {
+  width: 90%;
+  border: 5px solid transparent;
+	border-radius: 3px;
+}
+
+input[type="radio"]{
+  width: auto;
+}
+
+input, select{
+  color: white;
+	background-color: var(--light-bg-color);
+  border: 5px solid transparent;
+}
+
+input:hover, select:hover{
+  background-color: var(--light-accent-color);
+}
+
+.input-header{
+  text-align: left;
+}
+
+.date-input::placeholder{
+  color: #a9a9a9;
+}
+
+#dobMonth{
+  color: #a9a9a9;
+}
+
+#tos-link{
+  font-size: 10pt;
+}
+
+#tos-link a{
+  color: var(--accent-color);
+}
+
+#login-link {
+  color: var(--accent-color);
+}
+
+#submitButton:hover{
+  background-color: var(--accent-color);
+}

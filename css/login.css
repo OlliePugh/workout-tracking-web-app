@@ -1,0 +1,58 @@
+@import url("variables.css");
+
+html{
+  transition: 0s;
+  -webkit-transition: 0s;
+}
+
+html *{
+  transition: 0s; /*had to be added due to a fade in bug */
+  -webkit-transition: 0s;
+}
+
+h1, input, p{
+  color: var(--text-color)
+}
+
+.has-transition:hover{
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+}
+
+#wrapper{
+  width: 25%;
+  min-width:300px;
+  margin: 0 auto;
+}
+
+#sign-up-link{
+  display: block;
+  margin-top: 10px;
+  color: var(--accent-color);
+}
+
+#submit-button:hover{
+  background-color: var(--accent-color);
+}
+
+#reset-pass-link{
+  text-align: right;
+  display: block;
+  margin: 10px 0;
+  color: var(--accent-color);
+}
+
+.color-link{
+  color: var(--accent-color);
+}
+
+.input-title{
+  text-align: left;
+  margin: 0 0 5px 0;
+}
+
+.input-box{
+  cursor: text;
+  width: 90%;
+  height: 30px;
+}

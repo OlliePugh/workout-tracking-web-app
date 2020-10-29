@@ -1,0 +1,34 @@
+@import url("variables.css");
+
+#input-wrapper{
+  border-radius: 25px;
+  border: 1px transparent solid;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 25px 10%;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--accent-color);
+}
+
+#machineTable td {
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px transparent solid;
+  width: 80%;
+}
+
+#machineTable td:hover{
+  background-color: var(--light-bg-color);
+}
+
+.input-header{
+  margin-bottom: 2px;
+  text-align: left;
+}
+
+#input-wrapper input, #input-wrapper select{
+  width: 100%;
+}

@@ -1,0 +1,9 @@
+@import url("variables.css");
+
+#success-message h1{
+  font-size: 30pt;
+}
+
+#success-message a{
+  color: var(--accent-color);
+}

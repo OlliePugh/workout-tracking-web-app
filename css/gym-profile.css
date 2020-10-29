@@ -1,0 +1,88 @@
+@import url("variables.css");
+
+.tile-wrapper{
+  box-sizing: border-box;
+  width: 50%;
+  display: inline-block;
+  float: left;
+  padding: 40px;
+  min-width: 620px;
+}
+
+#image-slider{
+  box-sizing: border-box;
+  width: 50%;
+  height: auto;
+  display: inline-block;
+  float: left;
+  padding: 40px;
+  min-width: 620px;
+  border: 1px transparent solid;
+  border-radius: 25px;
+}
+
+.tile-content{
+  padding: 20px;
+  background-color: var(--accent-color);
+  border: 1px transparent solid;
+  border-radius: 25px;
+}
+
+.tile-content h3{
+  margin-top: 0;
+  display:inline;
+}
+
+#slides{
+  border: 1px transparent solid;
+  border-radius: 25px;
+  overflow: hidden; /*round off corner of images */
+  max-height: 360px;
+  max-width: 633px;
+  margin:0 auto;
+  position: relative;
+}
+
+#slides img{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  float: left;
+}
+
+#slides .controllers{
+  background-color: black;
+  position:absolute;
+  bottom: 50%;
+  margin: 0;
+  cursor: pointer;
+}
+
+#opening-times p {
+  margin: 0;
+}
+
+#opening-times table, #prices table, #contact table{
+  margin: 0 auto;
+}
+
+#opening-times table tr td, #prices table tr td, #contact table tr td{
+ padding-right: 4px; /*give the days and times space between */
+}
+
+#gym-name{
+  margin-left: 100px;
+}
+
+@media only screen and (max-width: 1360px)  {
+  .tile-wrapper, #image-slider{
+    width: 100%;
+  }
+
+  #gym-name {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,12 @@
+:root {
+  --main-bg-color: #0f0f0f;
+  --light-bg-color: #2d2d2d;
+  --light-accent-color: #434656;
+	--text-color: white;
+	--accent-color: #4CAAC4;
+}
+
+@font-face {
+	font-family: "Aileron";
+	src: url("fonts/Aileron-Regular.otf");
+}

@@ -1,0 +1,112 @@
+@import url("variables.css");
+
+/*SETTING UP THE PAGES GRID*/
+
+#top-div{
+  height: 60%;
+  width: 100%;
+}
+
+#bottom-div{
+  height: 40%;
+  width: 100%;
+}
+
+#bottom-left-div{
+  float: left;
+  height: 100%;
+  width: 40%;
+}
+
+#bottom-left-wrapper{ /* vertically align the input box */
+  position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+}
+
+#bottom-right-div{
+  float: left;
+  height: 100%;
+  width: 60%;
+}
+
+#exerciseNameContainer{
+  background-color: var(--accent-color);
+  border: 1px solid transparent;
+  border-radius: 25px;
+  max-height: 230px;
+  height: 80%;
+  width: 70%; /*NEEDS CHANGING */
+  margin: 0 auto;
+  overflow:hidden;
+}
+
+#exerciseNames{
+  list-style-type: none;
+}
+
+#exerciseNames li{
+  text-align: center;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+#exerciseNames li:not(#no-exercise-found):hover{
+  background-color: var(--light-bg-color);
+  cursor: pointer;
+}
+
+#exerciseName{
+  clear: right;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  margin: 0;
+  font-size: 5vw;
+}
+
+@media screen and (min-width: 1200px) {
+  #exerciseName {
+     font-size: 54px; /*5% * 1200px*/
+  }
+}
+
+  @media screen and (max-width: 500px) {
+    #exerciseName {
+       font-size: 25; /*5% * 1200px*/
+    }
+  }
+
+#noGraphText{
+  margin: 0;
+  z-index: 1;
+  position: absolute;
+  top: 25%; /*half way through the half of the div*/
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 25pt
+}
+
+#exerciseSearch{
+	color: white;
+	background-color: var(--light-bg-color);
+	border: 5px solid transparent;
+	border-radius: 3px;
+}
+
+#exerciseSearch::placeholder{
+  color: white;
+}
+
+#spotlight .option{
+  margin: 0 auto;
+}

@@ -1,0 +1,18 @@
+@import url("variables.css");
+
+.marker-popup {
+  text-align: center;
+}
+
+.marker-popup *{
+  color: var(--light-bg-color);
+}
+
+.marker-popup a{
+  transition: 0.5s;
+  -webkit-transiton: 0.5s;
+}
+
+.marker-popup a:hover{
+  color: var(--accent-color);
+}
