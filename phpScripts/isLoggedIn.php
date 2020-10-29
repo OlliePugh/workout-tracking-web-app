@@ -12,7 +12,7 @@ function getIP(){ //CODE FROM http://itman.in/en/how-to-get-client-ip-address-in
 
 function endCheck(){ //this is to stop allowing someone access whe when they should not have it
   if (empty($_SESSION["name"]) || empty($_SESSION["ID"])){
-    header("Location: ../login.php");
+    header("Location: login.php");
     exit;
   }
 }
